@@ -3,48 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate - Roots of Remembrance</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Roots of Remembrance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #1b263b;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e63946;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #d62828;
+    }
+
+    main, .info {
+      background: white;
+      padding: 40px 20px;
+      text-align: center;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #1b263b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Header / Navigation -->
   <header>
     <h1>Roots of Remembrance</h1>
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
       <a href="donate.html">Donate</a>
+      <a href="veterans.html">Meet Our Veterans</a>
+      <a href="mission.html">Our Mission</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Support Our Veterans</h2>
-      <p>Your contribution helps veterans access housing, healthcare, job training, and community support programs.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Together We Remember, Together We Support</h2>
+    <p>Your donations help .</p>
+    <a href="donate.html" class="btn">Donate Now</a>
+    <a href="about.html" class="btn">Learn About Us</a>
+    <a href="mission.html" class="btn">Our Mission</a>
+    <a href="veterans.html" class="btn">Meet Our Veterans</a>
+  </section>
 
-      <h3>Donate Now</h3>
-      <a href="#" class="btn">Donate via PayPal</a>
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>In Honor of Service</h2>
+    <div class="gallery-images">
+      <img src="images/memorial1.jpg" alt="Memorial Ceremony">
+      <img src="images/memorial2.jpg" alt="Tree Planting Event">
+    </div>
+  </section>
 
-      <h3>Optional Donation Form</h3>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name">
+  <style>
+    .gallery {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com">
+    .gallery h2 {
+      color: #1b263b;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
 
-        <label for="amount">Donation Amount ($):</label>
-        <input type="number" id="amount" name="amount" placeholder="50">
+    .gallery-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
 
-        <button type="submit">Submit</button>
-        <p><em>Note: This is a demo form. Integrate with a payment processor for real donations.</em></p>
-      </form>
-    </section>
-  </main>
+    .gallery-images img {
+      width: 400px;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
 
-  <footer>
-    <p>© 2025 Roots of Remembrance | All Rights Reserved</p>
-  </footer>
-
-</body>
-</html>
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+  </style>
