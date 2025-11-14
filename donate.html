@@ -5,18 +5,36 @@
   <meta-name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roots of Remembrance</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
   <style>
+    /* ===== THEME A COLORS ===== */
+    :root {
+      --bg-light: #f7f9fc;
+      --primary-dark: #0d1b2a;
+      --hero-dark: #1b263b;
+      --accent-red: #e63946;
+      --accent-red-hover: #d62828;
+      --text-dark: #222;
+    }
+
     body {
-      font-family: Montserrat, Merriweather;
+      font-family: 'Merriweather', serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #222;
+      background: var(--bg-light);
+      color: var(--text-dark);
       line-height: 1.6;
     }
 
+    h1, h2, h3, nav a {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* ===== HEADER ===== */
     header {
-      background: #0d1b2a;
+      background: var(--primary-dark);
       color: white;
       text-align: center;
       padding: 20px 0;
@@ -26,64 +44,67 @@
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1.05em;
     }
 
     header nav a:hover {
       text-decoration: underline;
     }
 
+    /* ===== HERO SECTION ===== */
     .hero {
-      background: #1b263b;
+      background: var(--hero-dark);
       color: white;
       text-align: center;
       padding: 120px 20px;
     }
 
     .hero h2 {
-      font-size: 2.5em;
+      font-size: 2.7em;
       margin-bottom: 10px;
+      font-weight: 700;
     }
 
     .hero p {
-      font-size: 1.2em;
+      font-size: 1.25em;
+      max-width: 700px;
+      margin: 0 auto;
       margin-bottom: 20px;
+      opacity: 0.95;
     }
 
+    /* ===== BUTTON STYLE ===== */
     .btn {
       display: inline-block;
-      background: #e63946;
+      background: var(--accent-red);
       color: white;
       padding: 12px 24px;
       border-radius: 4px;
       text-decoration: none;
       margin: 10px;
-      font-weight: bold;
+      font-weight: 700;
+      font-size: 1.1em;
+      transition: 0.2s ease-in-out;
     }
 
     .btn:hover {
-      background: #d62828;
+      background: var(--accent-red-hover);
+      transform: translateY(-2px);
     }
 
+    /* ===== CONTENT SECTIONS ===== */
     main, .info {
       background: white;
       padding: 40px 20px;
       text-align: center;
-      margin: 20px auto;
+      margin: 30px auto;
       max-width: 900px;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    footer {
-      background: #1b263b;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 20px;
-    }
-
-    /* Gallery Section */
+    /* ===== GALLERY SECTION ===== */
     .gallery {
       background: white;
       padding: 60px 20px;
@@ -95,9 +116,10 @@
     }
 
     .gallery h2 {
-      color: #1b263b;
-      font-size: 2em;
+      color: var(--hero-dark);
+      font-size: 2.2em;
       margin-bottom: 30px;
+      font-weight: 700;
     }
 
     .gallery-images {
@@ -117,6 +139,17 @@
 
     .gallery-images img:hover {
       transform: scale(1.05);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--hero-dark);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95em;
     }
   </style>
 </head>
@@ -138,7 +171,10 @@
   <!-- Hero Section -->
   <section class="hero">
     <h2>Donate Now!</h2>
-    <p>Every donation helps as we look to preserve the legacy of our 14 World War II veterans from right here in Deep River with 14 newly planted memorial trees.</p>
+    <p>
+      Every donation helps as we look to preserve the legacy of our 14 World War II veterans 
+      from right here in Deep River with 14 newly planted memorial trees.
+    </p>
   </section>
 
   <!-- Gallery Section -->
