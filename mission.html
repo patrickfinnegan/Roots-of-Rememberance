@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roots of Remembrance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots of Remembrance - Our Mission</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
@@ -56,21 +56,42 @@
     .hero {
       background: var(--hero-dark);
       color: white;
-      text-align: center;
-      padding: 120px 20px;
+      padding: 80px 20px;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero-image {
+      width: 360px;
+      max-width: 40%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .hero-text {
+      text-align: left;
+      max-width: 700px;
     }
 
     .hero h2 {
       font-size: 2.7em;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       font-weight: 700;
     }
 
     .hero p {
       font-size: 1.25em;
-      max-width: 700px;
-      margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       opacity: 0.95;
     }
 
@@ -151,9 +172,24 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 0.95em;
     }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero-image {
+        width: 90%;
+        max-width: 420px;
+        margin-bottom: 20px;
+      }
+      .hero-text {
+        text-align: center;
+      }
+    }
   </style>
 </head>
-
 <body>
 
   <!-- Header / Navigation -->
@@ -168,37 +204,23 @@
     </nav>
   </header>
 
- <!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <img src="IMG_8735-3.jpg" alt="Hero Image" class="hero-image">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="IMG_8735-3.jpg" alt="Hero Image" class="hero-image">
 
-    <div class="hero-text">
-      <h2>Our Mission</h2>
-      <p>
-        Hello, we have created a team consiting of seniors and admin at Valley
-        Regional High School and one of our most active vets in the community,
-        Richard Naggot. Our mission for this project is to honor the 14 men who
-        sacrificed their lives to go fight in World War II for our safety and
-        for our freedom. Currently at VRHS we have 14 trees planted along the
-        driveway to honor these fallen heroes but sadly, these trees have been
-        standing strong for around 70 years now and are struggling to stay alive.
-        Due to this we created a team dedicated to our veterans and our towns
-        history. Our goal is to remove the dying trees and replace them with 14
-        brand new trees to uphold the legacy of not just those 14 veterans who
-        fought in World War II, but all the veterans who have ever served in
-        Deep River. We strongly value our veterans sacrifices and understand
-        that this is a neccesary procedure as it is our responsibility to honor
-        these veterans whos served for us. Considering this, we thank you for
-        your time and ask for your support as we look to support and fundraise
-        for this project so it can be complete.
-      </p>
+      <div class="hero-text">
+        <h2>Our Mission</h2>
+        <p>
+          Hello, we have created a team consiting of seniors and admin at Valley Regional High School and one of our most active vets in the community, Richard Naggot. Our mission for this project is to honor the 14 men who sacrificed their lives to go fight in World War II for our safety and for our freedom. Currently at VRHS we have 14 trees planted along the driveway to honor these fallen heroes but sadly, these trees have been standing strong for around 70 years now and are struggling to stay alive.
+        </p>
+        <p>
+          Due to this we created a team dedicated to our veterans and our town's history. Our goal is to remove the dying trees and replace them with 14 brand new trees to uphold the legacy of not just those 14 veterans who fought in World War II, but all the veterans who have ever served in Deep River. We strongly value our veterans' sacrifices and understand that this is a necessary procedure as it is our responsibility to honor these veterans who served for us. Considering this, we thank you for your time and ask for your support as we look to support and fundraise for this project so it can be complete.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-    
   <!-- Footer -->
   <footer>
     <div style="max-width: 900px; margin: auto; text-align: center;">
@@ -210,3 +232,7 @@
       <p>© 2025 Roots of Remembrance | All Rights Reserved</p>
     </div>
   </footer>
+
+</body>
+</html>
+
