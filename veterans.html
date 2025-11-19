@@ -168,9 +168,63 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Meet Our Vets!</h2>
+ <!-- Hero Section -->
+<section class="hero">
+  <h2>Meet Our Vets!</h2>
+  <p>Click on a veteran's name below to read their full biography.</p>
+</section>
+
+<!-- Veterans Gallery -->
+<section class="gallery">
+  <h2>Our Veterans</h2>
+
+  <div class="gallery-images" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+    
+    <!-- Veteran 1 -->
+    <div style="text-align: center; width: 200px;">
+      <img src="veteran1.jpg" alt="Veteran One" style="width: 100%; border-radius: 8px;">
+      <h3><a href="#veteran1" style="text-decoration: none; color: var(--accent-red); font-weight: bold;">Veteran Name 1</a></h3>
+      <p>Jan 1, 1920 – Dec 12, 1980</p>
+    </div>
+
+    <!-- Veteran 2 -->
+    <div style="text-align: center; width: 200px;">
+      <img src="veteran2.jpg" alt="Veteran Two" style="width: 100%; border-radius: 8px;">
+      <h3><a href="#veteran2" style="text-decoration: none; color: var(--accent-red); font-weight: bold;">Veteran Name 2</a></h3>
+      <p>Feb 5, 1921 – Nov 3, 1975</p>
+    </div>
+
+    <!-- Repeat for Veterans 3–14 -->
+    
+  </div>
+</section>
+
+<!-- Detailed Bio Section -->
+<section style="max-width: 900px; margin: 40px auto; padding: 20px;">
+
+  <!-- Veteran 1 Bio -->
+  <div id="veteran1" style="background: white; padding: 40px 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+    <img src="veteran1.jpg" alt="Veteran One" style="height: 200px; width: auto; border-radius: 10px; flex-shrink: 0;">
+    <div style="flex: 1; min-width: 250px;">
+      <h3>Veteran Name 1</h3>
+      <p><strong>DOB:</strong> Jan 1, 1920 | <strong>DOD:</strong> Dec 12, 1980</p>
+      <p>Full biography of Veteran Name 1. Include service, achievements, personal stories, awards, or any special recognition.</p>
+    </div>
+  </div>
+
+  <!-- Veteran 2 Bio -->
+  <div id="veteran2" style="background: white; padding: 40px 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+    <img src="veteran2.jpg" alt="Veteran Two" style="height: 200px; width: auto; border-radius: 10px; flex-shrink: 0;">
+    <div style="flex: 1; min-width: 250px;">
+      <h3>Veteran Name 2</h3>
+      <p><strong>DOB:</strong> Feb 5, 1921 | <strong>DOD:</strong> Nov 3, 1975</p>
+      <p>Full biography of Veteran Name 2. Include service, achievements, personal stories, awards, or any special recognition.</p>
+    </div>
+  </div>
+
+  <!-- Repeat for Veterans 3–14 -->
+
+</section>
     
 
   <!-- Footer -->
