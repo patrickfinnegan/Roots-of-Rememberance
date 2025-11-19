@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots of Remembrance</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== THEME A COLORS ===== */
+    :root {
+      --bg-light: #f7f9fc;
+      --primary-dark: #0d1b2a;
+      --hero-dark: #1b263b;
+      --accent-red: #e63946;
+      --accent-red-hover: #d62828;
+      --text-dark: #222;
+    }
+
+    body {
+      font-family: 'Merriweather', serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, nav a {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--primary-dark);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05em;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: var(--hero-dark);
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.7em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.25em;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      opacity: 0.95;
+    }
+
+    /* ===== BUTTON STYLE ===== */
+    .btn {
+      display: inline-block;
+      background: var(--accent-red);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: 700;
+      font-size: 1.1em;
+      transition: 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background: var(--accent-red-hover);
+      transform: translateY(-2px);
+    }
+
+    /* ===== CONTENT SECTIONS ===== */
+    main, .info {
+      background: white;
+      padding: 40px 20px;
+      text-align: center;
+      margin: 30px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* ===== GALLERY SECTION ===== */
+    .gallery {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .gallery h2 {
+      color: var(--hero-dark);
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .gallery-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .gallery-images img {
+      width: 400px;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--hero-dark);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <h1>Roots of Remembrance</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="donate.html">Donate</a>
+      <a href="veterans.html">Meet Our Veterans</a>
+      <a href="mission.html">Our Mission</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Meet Our Vets!</h2>
+    
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Roots of Remembrance Project</p>
+  </footer>
+
+</body>
+</html>
